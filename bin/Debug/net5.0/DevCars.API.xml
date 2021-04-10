@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevCars.API</name>
+    </assembly>
+    <members>
+        <member name="M:DevCars.API.Controllers.CarsController.Post(DevCars.API.InputModels.AddCarInputModel)">
+            <summary>
+            Cadastrar um carro.
+            </summary>
+            <remarks>
+            Requisição de exemplo: 
+            {
+                "brand": "FIAT",
+                "model": "Palio",
+                "vinCode": "abc147",
+                "year": 2021,
+                "color": VERMELHO,
+                "producitonDate": "2021-04-10"
+            }
+            </remarks>>
+            <param name="model">Dados de um novo carro</param>
+            <returns>Objeto criado</returns>
+            <response code ="201">Objeto criado com sucesso.</response>   
+            <response code ="400">Dados Invalidos</response> 
+        </member>
+    </members>
+</doc>
